@@ -70,6 +70,16 @@ body {
   margin-top: 20px;
 }
 
+.card a{
+  color:blue;
+  text-decoration:none;
+}
+
+.card a:hover{
+  color:red;
+  text-decoration:underline;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -79,7 +89,7 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #ddd;
   margin-top: 20px;
@@ -99,4 +109,13 @@ body {
     float: none;
     width: 100%;
   }
+}
+
+/* icon images */
+.icon {
+	width:20px;
+	height:20px;
+	display:inline;
+	margin:-1px 4px 5px 0px;
+	vertical-align:middle;d
 }
