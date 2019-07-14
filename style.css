@@ -63,6 +63,9 @@ body {
   padding: 20px;
 }
 
+.profile-pic{width:100%}
+	
+
 /* Add a card effect for articles */
 .card {
   background-color: white;
