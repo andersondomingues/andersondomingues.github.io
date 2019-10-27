@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     $("#page-content").load("home.html");
-	//alert("eady!");
+	//alert("ready!");
 
 	//button functions
 	$("#menu-home")
@@ -11,8 +11,21 @@ $(document).ready(function(){
 	$("#menu-research")
 		.click(function(){
 			$("#page-content").load("research.html"); });
+	$("#menu-photolog")
+		.click(function(){
+			$("#page-content").load("photolog.html"); });
+	$("#menu-resources")
+		.click(function(){
+			$("#page-content").load("resources.html"); });
+	$("#link-resources")
+		.click(function(){
+			$("#page-content").load("resources.html"); });
+	$("#menu-groups")
+		.click(function(){
+				$("#page-content").load("groups.html"); });
+	
 
-//  <a href="#" id="menu-blog"></a>
+//  <a id="menu-blog"></a>
 	
 });
 

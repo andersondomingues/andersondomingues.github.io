@@ -10,13 +10,18 @@ body {
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   background: white;
+  /*background-image: url("pics/santander2.jpg");*/
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: 100%;
 }
 
 .header h1 {
   font-size: 50px;
+  /*margin-bottom:0px;*/
 }
 
 /* Style the top navigation bar */
@@ -120,5 +125,14 @@ body {
 	height:20px;
 	display:inline;
 	margin:-1px 4px 5px 0px;
-	vertical-align:middle;d
+	vertical-align:middle;
+}
+
+/* clicable stuff */
+.link{
+  color: blue;
+}
+
+.link:hover{
+  color: red;
 }
