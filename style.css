@@ -1,22 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
+h3{
+  font-family: "Poppins";
+  font-weight: 400;
+  margin-top: -7px;
+  background-color: #363;
+  color:#fff;
+  padding: 12px;
+  margin:-20px -20px  10px -20px;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 body {
-  font-family: Arial;
-  padding: 10px;
+  font-family: "Inter";
   background: #f1f1f1;
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 10px;
-  text-align: center;
+  margin: 0px;
   background: white;
-  /*background-image: url("pics/santander2.jpg");*/
   background-position: center top;
-  background-attachment: scroll;
-  background-size: 100%;
+  background-size: 180px;
+  background-image: url('./pics/bg.jpg');
+  height:170px;
 }
 
 .header h1 {
@@ -73,7 +90,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   margin-top: 20px;
 }
@@ -86,6 +103,11 @@ body {
 .card a:hover{
   color:red;
   text-decoration:underline;
+}
+
+.row {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Clear floats after the columns */
@@ -121,7 +143,16 @@ body {
 
 /* icon images */
 .icon {
-	width:20px;
+  border:1px solid red;
+  border-radius: 10px;;
+  padding: 5px;
+  margin-top:15px;
+  display:inline;
+  white-space: pre-wrap;
+}
+
+.icon img{
+  width:20px;
 	height:20px;
 	display:inline;
 	margin:-1px 4px 5px 0px;

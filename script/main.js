@@ -1,13 +1,13 @@
 //load main page to left column at the startup
 $(document).ready(function(){
 
-    $("#page-content").load("home.html");
+    $("#page-content").load("_undergrad.html");
 	//alert("ready!");
 
 	//button functions
-	$("#menu-home")
+	$("#menu-undergraduation")
 		.click(function(){ 
-			$("#page-content").load("home.html"); });
+			$("#page-content").load("_undergrad.html"); });
 	$("#menu-research")
 		.click(function(){
 			$("#page-content").load("research.html"); });
