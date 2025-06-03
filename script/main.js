@@ -1,31 +1,41 @@
-//load main page to left column at the startup
+/* list of available pages */
+var pages = [
+  {"elem": "#menu-undergraduation", "content": "_undergrad.html"},
+  {"elem": "#menu-research", "content": "_research.html"},
+  {"elem": "#menu-photolog", "content": "_photolog.html"},
+  {"elem": "#menu-resources", "content": "_resources.html"},
+  {"elem": "#menu-groups", "content": "_groups.html"}
+];
+
+/* activate a page*/
+function activate(elemName){
+  console.log(elemName)
+  for(var i = 0; i < pages.length; i++){
+    var page = pages[i];
+    if(page.elem === elemName){
+      $(page.elem).addClass("nav-active");
+      $(page.elem).removeClass("nav-inactive");
+      $("#page-content").load(page.content);
+    } else {
+      $(page.elem).addClass("nav-inactive");
+      $(page.elem).removeClass("nav-active");
+    }
+  }
+}
+
+/* load main page to left column at the startup and hook up handlers */
 $(document).ready(function(){
+  activate(pages[0].elem); /* activate first page at startup */
 
-    $("#page-content").load("_undergrad.html");
-	//alert("ready!");
+  for(var i = 0; i < pages.length; i++){
+    let page = pages[i];
+    $(page.elem).click(() => activate(page.elem));
+  }
 
-	//button functions
-	$("#menu-undergraduation")
-		.click(function(){ 
-			$("#page-content").load("_undergrad.html"); });
-	$("#menu-research")
-		.click(function(){
-			$("#page-content").load("research.html"); });
-	$("#menu-photolog")
-		.click(function(){
-			$("#page-content").load("photolog.html"); });
-	$("#menu-resources")
-		.click(function(){
-			$("#page-content").load("resources.html"); });
-	$("#link-resources")
-		.click(function(){
-			$("#page-content").load("resources.html"); });
-	$("#menu-groups")
-		.click(function(){
-				$("#page-content").load("groups.html"); });
-	
-
-//  <a id="menu-blog"></a>
-	
+  $("#why").click(function(){
+    let url = "https://academia.stackexchange.com/a/38629";
+    window.open(url, '_blank').focus();
+  });
 });
+
 
