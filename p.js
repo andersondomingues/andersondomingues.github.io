@@ -1,10 +1,13 @@
 $(document).ready(function() {
     
     const courses = {
-        "Algorithms and Data Structures I": ["2025/1"],
-        "Dependable Hardware Systems": ["2025/2", "2025/1"],
+        "Algorithms and Data Structures I": ["2025/1", "2026/1"],
+        "Dependable Hardware Systems": ["2025/2", "2025/1", "2026/1"],
         "Foundations of Computing Systems": ["2025/2"],
-        "Digital Systems": ["2025/2", "2025/1"]
+        "Digital Systems": ["2025/2", "2025/1", "2026/1"],
+        "Introduction to Programming": ["2026/1"],
+        "Constructing Operating Systems": ["2026/1"],
+        "Senior Thesis Advising": ["2025/2", "2026/1"]
     }
     
     for(const [course, terms] of Object.entries(courses)) {
